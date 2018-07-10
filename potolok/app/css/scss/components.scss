@@ -9,6 +9,7 @@
 	color: $color-white;
 	text-decoration: none;
 	font-weight: normal;
+	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 2px 0 2px rgba(0,0,0,.15);
 	box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
@@ -26,6 +27,7 @@
 		background: linear-gradient(to bottom, #cadc0a 1%,#77a400 100%);
 		z-index: 10;
 		overflow: hidden;
+		transition: all .2s ease-out;
 
 		&:after{
 			content: '';
@@ -39,9 +41,9 @@
 			transform: rotate(35deg);
 		}
 
-		// &:hover{
-		// 	background: linear-gradient(to bottom, #77a400 1%,#cadc0a 100%);
-		// }
+		&:hover{
+			transform: scale(.9);
+		}
 	}
 
 	&-blue{

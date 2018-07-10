@@ -422,26 +422,22 @@ h6{
 // category
 .category{
 	position: relative;
-	padding: 40px 0;
-	background: url('../img/bg-5.jpg') no-repeat center top / cover;
-	height: 960px;
+	padding: 40px 0 160px;
+	background: url('../img/bg-4.png') no-repeat center top / cover;
 	font-family: $pdf;
 	font-weight: 300;
+	color: $color-white;
 
-	&:after{
-		content: '';
-		position: absolute;
-		bottom: -80px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 80px;
-		background: url('../img/shadow.png') no-repeat center top;
-		pointer-events: none;
+	.btn-wrap {
+		text-align: right;
 	}
 
 	.container{
 		overflow: inherit;
+
+		.flex{
+			justify-content: flex-end;
+		}
 	}
 
 	&__left{
@@ -476,7 +472,7 @@ h6{
 
 	&__num a{
 		font-size: 50px;
-		color: $color-black;
+		color: $color-white;
 		text-decoration: none;
 		line-height: 1;
 
@@ -486,11 +482,9 @@ h6{
 	}
 
 	&-text{
-		position: relative;
-		left: 200px;
-		font-size: 37px;
-		width: 100%;
-		max-width: 260px;
+		text-align: right;
+		font-size: 110px;
+		line-height: 1;
 
 		span{
 			font-weight: normal;
@@ -505,56 +499,19 @@ h6{
 	h1{
 		position: relative;
 		font-weight: 100;
-		font-size: 140px;
+		font-size: 110px;
 		line-height: 1;
+		text-align: right;
+		font-weight: 500;
+		text-transform: uppercase;
 
-		&:before{
-			content: '';
-			position: absolute;
-			right: 130px;
-			top: 30%;
-			width: 40px;
-			height: 8px;
-			background: $color-blue;
-		}
-
-		&:after{
-			content: '';
-			position: absolute;
-			right: 130px;
-			top: 30%;
-			height: 30px;
-			width: 8px;
-			background: $color-blue;
-		}
 
 		span{
-			position: relative;
-			display: block;
-			padding-left: 50px;
-			font-size: 90px;
+			text-align: right;
+			font-size: 190px;
 			font-weight: 300;
-			color: $color-yellow;
-
-			&:before{
-				content: '';
-				position: absolute;
-				left: 0;
-				top: 50%;
-				width: 40px;
-				height: 8px;
-				background: $color-yellow;
-			}
-
-			&:after{
-				content: '';
-				position: absolute;
-				left: 0;
-				top: 20%;
-				height: 30px;
-				width: 8px;
-				background: $color-yellow;
-			}
+			text-transform: uppercase;
+			color: #9cb805;
 		
 		}
 	}
@@ -564,6 +521,8 @@ h6{
 		height: auto;
 		overflow: hidden;
 		margin: 20px 0;
+		display: flex;
+		justify-content: flex-end;
 
 		li{
 			float: left;
@@ -582,8 +541,8 @@ h6{
 				border-radius: 50%;
 
 				&:hover{
-					background: $color-yellow;
-					color: $color-black;
+					background: #038fd7;
+					color: $color-white;
 				}
 
 			}
@@ -706,6 +665,26 @@ h6{
 	}
 }
 
+.order2{
+	position: relative;
+	margin-top: 0;
+	background: url('../img/order2.jpg') no-repeat center top / cover;
+	height: auto;
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 80px;
+		background: url('../img/shadow.png') no-repeat center top;
+		pointer-events: none;
+		z-index: 4;
+	}
+}
+
 // specific
 .specific{
 	width: 100%;
@@ -802,12 +781,25 @@ h6{
 	}
 }
 
+.maps2 {
+
+	.maps__list{
+		width: 25%;
+
+		> li{
+			font-size: 24px;
+			text-transform: inherit;
+		}
+	}
+
+}
+
+
 
 // service
 .service{
 	position: relative;
 	padding: 40px 0;
-	background: url('../img/bg-2.jpg') no-repeat center top / cover;
 
 
 	.container{
@@ -1262,6 +1254,44 @@ h6{
 				}
 			}
 
+		}
+	}
+}
+
+.spec{
+	padding: 50px 0 0;
+
+	h4 span{
+		color: #9cb805;
+	}
+
+	.item{
+		width: 33%;
+		max-width: 370px;
+		margin: 20px 0;
+
+		&__img{
+			width: 100%;
+			height: auto;
+			max-height: 209px;
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		h6{
+			color: #ff5600;
+			font-weight: 500;
+			text-align: center;
+		}
+
+		p{
+			text-align: center;
+			padding: 0 20px;
+			font-weight: 400;
+			color: #555;
 		}
 	}
 }

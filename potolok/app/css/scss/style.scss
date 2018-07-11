@@ -387,7 +387,7 @@ h6{
 		font-family: $roboto;
 		font-weight: normal;
 		font-size: 16px;
-		color: $color-blue;
+		color: #ff5600;
 		text-transform: inherit;
 		text-align: left;
 
@@ -1164,8 +1164,8 @@ h6{
 .form{
 	position: relative;
 	background: url('../img/form-bg.jpg') no-repeat center top / cover;
-	height: 400px;
-	padding: 40px 0;
+	height: 630px;
+	padding: 160px 0 0;
 	color: $color-white;
 
 	&:after{
@@ -1196,6 +1196,7 @@ h6{
 		font-weight: normal;
 		text-transform: uppercase;
 		margin-bottom: 10px;
+		color: #9cb805;
 	}
 
 	&-privacy{
@@ -1239,18 +1240,39 @@ h6{
 			}
 
 			button{
+				position: relative;
 				display: inline-block;
 				width: 100%;
 				max-width: 330px;
 				padding: 12px 50px;
 				font-family: $pdf;
 				font-size: 28px;
+				color: $color-white;
 				text-transform: uppercase;
 				border-radius: 8px;
-				background: linear-gradient(to bottom, rgba(254,231,0,1) 1%,rgba(253,202,0,1) 100%);
+				background: linear-gradient(to bottom, #cadc0a 1%,#77a400 100%);
+				overflow: hidden;
+				transition: all .2s ease-out;
+
+				&:after{
+					content: '';
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					top: -50px;
+					width: 60%;
+					height: 200px;
+					background: linear-gradient(to bottom, #b8d108 1%,#5f8500 100%);
+					transform: rotate(35deg);
+				}
 
 				&:hover{
-					background: linear-gradient(to bottom, rgba(253,202,0,1) 1%,rgba(254,231,0,1) 100%);
+					transform: scale(.9);
+				}
+
+				span{
+					position: relative;
+					z-index: 99;
 				}
 			}
 

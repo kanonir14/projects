@@ -704,7 +704,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  color: #9cb805;
+  color: #ff5600;
   text-transform: inherit;
   text-align: left;
 }
@@ -1506,8 +1506,8 @@ h6 {
 .form {
   position: relative;
   background: url("../img/form-bg.jpg") no-repeat center top/cover;
-  height: 400px;
-  padding: 40px 0;
+  height: 630px;
+  padding: 160px 0 0;
   color: #fff;
 }
 
@@ -1539,6 +1539,7 @@ h6 {
   font-weight: normal;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: #9cb805;
 }
 
 .form-privacy {
@@ -1593,26 +1594,53 @@ h6 {
 }
 
 .form-link form button {
+  position: relative;
   display: inline-block;
   width: 100%;
   max-width: 330px;
   padding: 12px 50px;
   font-family: "PF Din Text Cond Pro", sans-serif;
   font-size: 28px;
+  color: #fff;
   text-transform: uppercase;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fee700), to(#fdca00));
-  background: -webkit-linear-gradient(top, #fee700 1%, #fdca00 100%);
-  background: -o-linear-gradient(top, #fee700 1%, #fdca00 100%);
-  background: linear-gradient(to bottom, #fee700 1%, #fdca00 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #cadc0a), to(#77a400));
+  background: -webkit-linear-gradient(top, #cadc0a 1%, #77a400 100%);
+  background: -o-linear-gradient(top, #cadc0a 1%, #77a400 100%);
+  background: linear-gradient(to bottom, #cadc0a 1%, #77a400 100%);
+  overflow: hidden;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.form-link form button:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: -50px;
+  width: 60%;
+  height: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #b8d108), to(#5f8500));
+  background: -webkit-linear-gradient(top, #b8d108 1%, #5f8500 100%);
+  background: -o-linear-gradient(top, #b8d108 1%, #5f8500 100%);
+  background: linear-gradient(to bottom, #b8d108 1%, #5f8500 100%);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
 }
 
 .form-link form button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fdca00), to(#fee700));
-  background: -webkit-linear-gradient(top, #fdca00 1%, #fee700 100%);
-  background: -o-linear-gradient(top, #fdca00 1%, #fee700 100%);
-  background: linear-gradient(to bottom, #fdca00 1%, #fee700 100%);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.form-link form button span {
+  position: relative;
+  z-index: 99;
 }
 
 .spec {

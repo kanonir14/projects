@@ -1,0 +1,78 @@
+// buttons
+
+.btn{
+	display: inline-block;
+	width: 100%;
+	border-radius: 4px;
+	font-family: $pdf;
+	font-size: 22px;
+	color: $color-white;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 0 2px rgba(0,0,0,.15);
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+
+	span{
+		position: relative;
+		z-index: 99;
+	}
+
+	&-orange{
+		position: relative;
+		top: 22px;
+		max-width: 340px;
+		padding: 8px;
+		background: linear-gradient(to bottom, #cadc0a 1%,#77a400 100%);
+		border: 1px solid #b3c85b;
+		z-index: 10;
+		overflow: hidden;
+		transition: all .2s ease-out;
+
+		&:after{
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			top: -50px;
+			width: 60%;
+			height: 200px;
+			background: linear-gradient(to bottom, #b8d108 1%,#5f8500 100%);
+			transform: rotate(35deg);
+		}
+
+		&:hover{
+			transform: scale(.9);
+		}
+	}
+
+	&-blue{
+		position: relative;
+		display: block;
+		width: 270px;
+		height: 80px;
+		padding-left: 50px;
+		font-family: $pdf;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: $color-white;
+		text-decoration: none;
+		line-height: 80px;
+		background: $color-blue;
+		border: 1px solid $color-white;
+		text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+		box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+		transition: all .2s ease-out;
+
+		&:hover{
+			background: #0584c3;
+		}
+
+		img{
+			position: absolute;
+			left: 20px;
+			top: 20px;
+		}
+	}
+}

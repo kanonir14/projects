@@ -8,6 +8,14 @@
 @import "components.scss";
 
 
+h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 1.8;
+	padding-left: 20px;
+}
+
+
 .flex, .row{
 	@include display(flex);
 }
@@ -134,6 +142,7 @@
 			opacity: 0;
 			visibility: hidden;
 			transition: $default-transition;
+			z-index: 999;
 
 			&:after{
 				content: '';
@@ -176,6 +185,19 @@ main{
 .content{
 	width: 70%;
 
+	a{
+		color: $color-black;
+		text-decoration: none;
+	}
+
+	h3{
+		padding: 0 10px;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: center;
+	}
+
 	.item{
 		position: relative;
 		width: 29%;
@@ -183,16 +205,90 @@ main{
 		padding: 10px;
 		background: $color-white;
 		border: 1px solid lighten($color-blue, 50%);
+		border-radius: 4px;
+		transition: $default-transition;
+		overflow: hidden;
 
-		&:before{
+
+		&:after{
 			content: '';
-			position: absolute;
-			left: -2px;
-			top: -2px;
-			right: -2px;
-			bottom: -2px;
-			background: 
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background: transparent;
+				opacity: .8;
+				transition: $default-transition;
+				pointer-events: none;
+
 		}
+
+		&:hover{
+			border: 1px solid lighten($color-blue, 20%); 
+
+			.btn-more{
+				display: inline-block;
+			}
+
+			h3{
+				font-size: 20px;
+			}
+
+			&:after{
+				background: lighten($color-white, 10%);
+			}
+
+			&__info{
+				background: blue;
+			}
+
+		}
+
+		&__info{
+			position: relative;
+			text-align: center;
+		}		
+
+		&__img{
+			position: relative;
+			width: 100%;
+			min-height: 250px;
+			overflow: hidden;
+
+			img{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 100%;
+				height: auto;
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		.price{
+			text-align: center;
+			font-size: 16px;
+			line-height: 2;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: $color-orange;
+			transition-duration: 0s;
+		}
+	}
+}
+
+.item:hover .item__info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10px;
+	right: 10px;
+	z-index: 10;
+
+	.price{
+		font-size: 24px;
+		color: $color-orange;
 	}
 }
 

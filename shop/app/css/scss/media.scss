@@ -1,0 +1,197 @@
+@import "../../bower_components/Font-Awesome/web-fonts-with-css/scss/fontawesome.scss";
+@import "../../bower_components/Font-Awesome/web-fonts-with-css/scss/solid.scss";
+@import "../../bower_components/Font-Awesome/web-fonts-with-css/scss/brands.scss";
+@media screen and (max-width: 1169px) {
+	.container{
+		width: 100%;
+		height: auto;
+		max-width: 768px;
+		padding: 0 10px;
+	}
+
+	.header{
+		padding: 10px 0;
+	}
+
+	.header .container .row{
+		flex-direction: column;
+	}
+
+	.logo{
+		text-align: center;
+	}
+
+	.nav li{
+		line-height: 4.5;
+
+		.submenu{
+			top: 80px;
+		}
+	}
+
+	.content{
+		.news, .gallery{
+			width: 100%;
+		}
+
+		.item{
+			width: 29%;
+		}
+	}
+
+
+}
+
+@media screen and (max-width: 767px) {
+	.content .item{
+		width: 46%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+
+	h6{
+		font-family: $bold;
+	}
+
+	.hamburger{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		display: block !important;
+		cursor: pointer;	
+	}
+
+	.logo{
+		width: 100%;
+		text-align: left;
+	}
+
+	.nav{
+		visibility: hidden;
+		opacity: 0;
+		height: 0;
+		margin-top: 20px;
+		width: 100%;
+		flex-direction: column;
+
+		li{
+			width: 100%;
+			text-align: right;
+			line-height: 2.5;
+	
+			.submenu{
+				position: static;
+				left: auto;
+				top: auto;
+				height: 1px;
+				margin-top: 0px;
+				padding: 0;
+				visibility: hidden;
+				opacity: 0;
+				transform: translate(0);
+
+				&:after{
+					left: 86%;
+				}
+
+				li{
+					line-height: 2;
+				}
+			}
+
+			&:hover{
+				.submenu{
+					visibility: hidden;
+					opacity: 0;
+
+
+				}
+			}
+		}
+	}
+
+	.content .item__img{
+		min-height: 180px;
+	}
+
+	// news
+	.content h1{
+		font-size: 24px;
+	}
+
+	.news__descr{
+		text-align: justify;
+	}
+
+	.order{
+		flex-direction: column;
+
+		> div{
+			width: 100% !important;
+		}
+	}
+
+	// footer
+	.footer .row{
+		flex-direction: column;
+		font-size: 14px;
+
+		> *{
+			width: 100% !important;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.content .item{
+		width: 100%;
+
+		&:after{
+			display: none;
+		}
+	}
+
+	.content .item__img{
+		min-height: 250px;
+	}
+
+	.btn-more{
+		display: inline-block;
+	}
+
+	.item:hover .item__info{
+		position: static;
+		top: auto;
+		transform: translateY(0);
+		left: auto;
+		right: auto;
+	}
+
+	.content .item:hover h3{
+		font-size: 16px;
+	}
+
+	.item:hover .item__info .price{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	 .hero .search{
+		display: none;
+	}
+
+	.logo__title{
+		font-size: 14px;
+	}
+
+	.content .gallery__owl a{
+		height: 200px;
+	}
+
+	.content .gallery__thumbs a{
+		height: 50px;
+	}
+}

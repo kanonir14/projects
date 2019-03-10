@@ -1,6 +1,28 @@
+
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/OpenSansRegular.woff") format("woff");
+  font-family: "Roboto Regular";
+  src: url("../../fonts/RobotoRegular/RobotoRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../../fonts/RobotoBold/RobotoBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../../fonts/RobotoMedium/RobotoMedium.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Beer";
+  src: url("../../fonts/BeerRegular/BeerRegular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }

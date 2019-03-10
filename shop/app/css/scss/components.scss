@@ -18,3 +18,46 @@
 		}
 	}
 }
+
+
+// form
+
+.order-form{
+	width: 100%;
+	height: auto;
+
+	.form-group:not(:last-child){
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.form-group:last-child{
+		width: 100%;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	input{
+		width: 100%;
+		padding: 8px;
+		color: $color-black;
+		background: $color-white;
+		border: 1px solid lighten($color-blue, 50%);
+		transition: $default-transition;
+
+			&:focus{
+				border: 1px solid lighten($color-blue, 20%);
+			}
+	}
+
+	button{
+		display: inline-block;
+		width: 100%;
+		max-width: 300px;
+		padding: 10px;
+		background: darken($color-green, 15%);
+		font-size: 20px;
+		color: $color-white;
+		text-transform: uppercase;
+	}
+}

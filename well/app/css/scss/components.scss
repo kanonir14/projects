@@ -1,6 +1,6 @@
 .poligon{
-	-webkit-clip-path: polygon(0 0, 100% 1%, 100% 88%, 50% 100%, 0 87%);
-	clip-path: polygon(0 0, 100% 1%, 100% 88%, 50% 100%, 0 87%);
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 88%, 50% 100%, 0 87%);
+	clip-path: polygon(0 0, 100% 0%, 100% 88%, 50% 100%, 0 87%);
 }
 
 .poligon2{
@@ -11,6 +11,13 @@
 .poligon-top{
 	-webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0% 100%);
 	clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 990px) {
+	.poligon-top{
+		-webkit-clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 100%, 0% 100%);
+		clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 100%, 0% 100%);
+	}
 }
 
 .poligon-right{

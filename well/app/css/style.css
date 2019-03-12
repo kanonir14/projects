@@ -204,6 +204,12 @@ h1 {
   text-align: right;
 }
 
+h1 span {
+  font-family: "ProximaNova-Regular", sans-serif;
+  display: block;
+  font-size: .7em;
+}
+
 h2 {
   display: inline-block;
   font-family: "ProximaNova-Bold", sans-serif;
@@ -1006,6 +1012,9 @@ h3 {
   .why-us .row {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .why-us .item {
     width: 50%;
@@ -1072,6 +1081,37 @@ h3 {
   }
   .location-list span {
     font-size: 15px;
+  }
+  .service {
+    height: auto;
+  }
+  .service .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .service__text {
+    width: 100%;
+  }
+  .service__img > div {
+    position: static;
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 0;
+  }
+  .service__img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .service__list li {
+    font-size: 16px;
   }
   .how-work {
     padding-bottom: 0;
@@ -1157,15 +1197,6 @@ h3 {
     left: -18px;
     top: 4px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .icon-phone {
-    display: none;
-  }
-  .info h2 {
-    margin-top: 20px;
-  }
   .location .container {
     text-align: center;
   }
@@ -1185,6 +1216,15 @@ h3 {
   }
   .location-list span {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .icon-phone {
+    display: none;
+  }
+  .info h2 {
+    margin-top: 20px;
   }
   .how-work .img:first-child {
     top: 100px;
@@ -1216,6 +1256,13 @@ h3 {
   }
   .why-us .item p {
     font-size: 14px;
+  }
+  .service__list li {
+    font-size: 14px;
+  }
+  .service__list li:before {
+    width: 25px;
+    height: 25px;
   }
   .gallery .item {
     -ms-flex-preferred-size: 100%;

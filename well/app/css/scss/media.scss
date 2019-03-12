@@ -20,6 +20,7 @@
 
 	.why-us .row{
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.why-us .item{
@@ -90,6 +91,36 @@
 
 	.location-list span{
 		font-size: 15px;
+	}
+
+	.service{
+		height: auto;
+	}
+
+	.service .row{
+		flex-direction: column;
+	}
+
+	.service__text{
+		width: 100%;
+	}
+
+	.service__img > div{
+		position: static;
+		width: 100%;
+		max-width: 250px;
+		margin: 10px 0;
+	}
+
+	.service__img{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.service__list li{
+		font-size: 16px;
 	}
 
 	.how-work{
@@ -185,16 +216,6 @@
 			top: 4px;
 		}
 	}
-}
-
-@media screen and (max-width: 480px) {
-	.icon-phone{
-		display: none;
-	}
-
-	.info h2{
-		margin-top: 20px;
-	}
 
 	.location .container{
 		text-align: center;
@@ -214,6 +235,18 @@
 	.location-list span{
 		font-size: 18px;
 	}
+}
+
+@media screen and (max-width: 480px) {
+	.icon-phone{
+		display: none;
+	}
+
+	.info h2{
+		margin-top: 20px;
+	}
+
+	
 
 	.how-work .img:first-child{
 		top: 100px;
@@ -254,6 +287,16 @@
 	.why-us .item p{
 		font-size: 14px;
 	}
+
+	.service__list li{
+		font-size: 14px;
+
+		&:before{
+			width: 25px;
+			height: 25px;
+		}
+	}
+
 
 	.gallery .item{
 		flex-basis: 100%;

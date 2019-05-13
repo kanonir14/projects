@@ -24,6 +24,11 @@
 // 	@include flex-wrap(wrap);
 // }
 
+input:required{
+	box-shadow: 0 0 0 $color-white;
+}
+
+
 h1{
 	margin: auto;
 	padding: 90px 0;
@@ -280,7 +285,7 @@ h3{
 
 .about{
 	position: relative;
-	padding: 20px 0 100px;
+	padding: 20px 0 60px;
 
 	.container{
 		overflow: inherit;
@@ -376,6 +381,7 @@ h3{
 // work
 
 .work{
+	padding: 50px 0;
 
 	h2{
 		margin-bottom: 120px;
@@ -498,11 +504,12 @@ h3{
 			position: absolute;
 			left: 51%;
 			top: -40px;
+			margin-left: -257px;
 			width: 514px;
 			height: 520px;
 			background: url('../img/work-shadows.png') no-repeat center center / contain;
-			transform: translateX(-50%);
 			pointer-events: none;
+			animation: pulse 2.4s infinite;
 		}
 
 		a{
@@ -976,9 +983,220 @@ h3{
 		}
 	}
 
-	
+// contacts
 
+.contacts{
+	width: 100%;
+	padding: 60px 0 0;
 
+	.row{
+		position: relative;
+		width: 100%;
+		max-width: 1920px;
+		margin: auto;
+		justify-content: space-around;
+
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0px;
+			left: 50%;
+			width: 0;
+			height: 0;
+			border: 40px solid transparent; border-top: 40px solid $color-white; 
+			transform: translateX(-50%);
+		}
+	}
+
+	.location{
+		width: 50%;
+		padding: 80px 0 200px;
+		text-align: center;
+
+		&-img{
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			border-radius: 50%;
+			border: 8px solid $color-white;
+			box-shadow: 13px 13px 14px rgba(0,0,0,0.27);
+
+			img{
+				width: 100%;
+			}
+		}
+
+		&-check{
+			display: flex;
+			justify-content: center;
+
+			p{
+				position: relative;
+				padding-top: 60px;
+				padding-bottom: 15px;
+				font-size: 21px;
+				color: $color-white;
+				border-bottom: 1px solid rgba(255,255,255,.6);
+
+				a{
+					color: $color-white;
+					text-decoration: none;
+				}
+
+				&:first-child{
+					padding-right: 30px;
+
+					&:before{
+						content: '';
+						position: absolute;
+						left: 50%;
+						top: 20px;
+						width: 23px;
+						height: 30px;
+						background: url('../img/marker-icon.png') no-repeat center center / contain;
+						transform: translateX(-50%);
+					}
+				}
+
+				&:last-child{
+					padding-left: 30px;
+
+					&:before{
+						content: '';
+						position: absolute;
+						left: 50%;
+						top: 20px;
+						width: 25px;
+						height: 25px;
+						background: url('../img/mail2-icon.png') no-repeat center center / contain;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+	}
+
+	.map-link{
+		display: inline-block;
+		position: relative;
+		padding: 20px 0 20px;
+		font-size: 12px;
+		color: $color-white;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:after{
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			width: 20px;
+			height: 10px;
+			background: url('../img/arrow-down.png') no-repeat center center / contain;
+			transform: translateX(-50%);
+		}
+	}
+
+	.kyiv{
+		background: url('../img/kyiv-map.png') no-repeat center center / cover;
+	}
+
+	.lviv{
+		background: url('../img/lviv-map.png') no-repeat center center / cover;
+	}
+} 
+
+// footer
+.footer{
+	background: $color-dark-grey;
+	padding-bottom: 150px;
+
+	.container{
+		overflow: inherit;
+	}
+
+	.order-form{
+		position: relative;
+		width: 100%;
+		max-width: 890px;
+		margin: auto;
+		margin-top: -100px;
+		padding: 15px;
+		background: $color-white;
+		z-index: 9;
+	}
+
+	h2{
+		width: 100%;
+		font-family: $font-medium;
+		font-size: 21px;
+	}
+
+	.row{
+		flex-wrap: wrap;
+	}
+
+	.col{
+		width: 50%;
+		padding-right: 10px;
+	}
+}
+
+.outer{
+	position: absolute;
+	left: 50%;
+	top: 268px;
+	text-align: center;
+	color: #fff;
+	transform: translateX(-50%);
+}
+
+.form-info{
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+.scroll-top{
+	position: absolute;
+	top: -28px;
+	left: 50%;
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	border: 4px solid $color-dark-grey;
+	background: $color-white;
+	transform: translateX(-50%);
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 14px;
+		top: 15px;
+		width: 21px;
+		height: 16px;
+		background: url('../img/triangle-icon.png') no-repeat center center / contain;
+	}
+}
+
+// animate 
+
+@keyframes pulse{
+	0%{
+		transform:scale(1.2);
+	}
+	25%{
+		transform:scale(.8);
+	}
+	50%{
+		transform:scale(1.2);
+	}
+	75%{
+		transform:scale(.8);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
 
 
 //      MEDIA

@@ -334,6 +334,7 @@ h3:before {
 
 .row {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -341,6 +342,7 @@ h3:before {
 .row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
@@ -370,27 +372,48 @@ h3:before {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 33vw;
+  width: 20vw;
   background: #363636;
 }
 
 .navigation .row {
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
 .logo {
+  position: relative;
   width: 100%;
   max-width: 25%;
+  height: 81px;
+  line-height: 105px;
+  background: #363636;
   z-index: 2;
+}
+
+.logo:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 81px 0;
+  border-color: transparent #e7342c transparent transparent;
+  z-index: 3;
 }
 
 .nav {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -402,6 +425,9 @@ h3:before {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .nav li a:hover {
@@ -441,6 +467,7 @@ h3:before {
 .counts .row {
   width: 100%;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
@@ -468,6 +495,7 @@ h3:before {
 }
 
 .services .row {
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -475,6 +503,7 @@ h3:before {
 .services .item {
   position: relative;
   width: 100%;
+  max-width: -webkit-calc(25% - 2rem);
   max-width: calc(25% - 2rem);
   height: 315px;
   margin: 1rem;
@@ -559,6 +588,7 @@ h3:before {
 .about__text {
   position: relative;
   left: -100px;
+  width: -webkit-calc(100% + 100px);
   width: calc(100% + 100px);
   margin-bottom: 30px;
   padding: 50px;
@@ -589,6 +619,7 @@ h3:before {
   width: 53px;
   height: 53px;
   margin-right: 5px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #e7342c;
 }
@@ -767,6 +798,7 @@ h3:before {
   color: #fff;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   text-decoration: none;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #e7342c;
   -webkit-transform: translateX(-50%);
@@ -818,6 +850,7 @@ h3:before {
 
 .team-info {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 40%;
@@ -914,7 +947,7 @@ h3:before {
 }
 
 .vacancy {
-  padding: 40px 0;
+  padding: 0 0 40px;
 }
 
 .vacancy .container {
@@ -953,12 +986,14 @@ h3:before {
 .vacancy-list {
   width: 100%;
   max-width: 66%;
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .vacancy .item {
   position: relative;
+  width: -webkit-calc((100% - 40px * 2) / 4);
   width: calc((100% - 40px * 2) / 4);
   margin: 10px 10px;
   padding: 30px 20px;
@@ -1154,9 +1189,11 @@ h3:before {
   color: #fff;
   background: #363636;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
@@ -1198,6 +1235,7 @@ h3:before {
   width: 53px;
   height: 53px;
   margin-right: 5px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #e7342c;
   border: 4px solid #fff;
@@ -1221,11 +1259,16 @@ h3:before {
   padding: 60px 0 0;
 }
 
+.contacts h2 {
+  margin-bottom: 50px;
+}
+
 .contacts .row {
   position: relative;
   width: 100%;
   max-width: 1920px;
   margin: auto;
+  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
@@ -1254,6 +1297,7 @@ h3:before {
   width: 200px;
   height: 200px;
   margin: auto;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 8px solid #fff;
   -webkit-box-shadow: 13px 13px 14px rgba(0, 0, 0, 0.27);
@@ -1266,9 +1310,11 @@ h3:before {
 
 .contacts .location-check {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
@@ -1379,6 +1425,7 @@ h3:before {
 }
 
 .footer .row {
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -1410,6 +1457,7 @@ h3:before {
   left: 50%;
   width: 58px;
   height: 58px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 4px solid #363636;
   background: #fff;
@@ -1471,5 +1519,99 @@ h3:before {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .navigation:before {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 3900px) {
+  .navigation:before {
+    width: 39%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  h1 {
+    position: relative;
+    z-index: 3;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .header {
+    min-height: 740px;
+  }
+  .services .item {
+    height: 210px;
+  }
+  .services .item__info {
+    font-size: 18px;
+  }
+  .services .item__info span {
+    font-size: 20px;
+  }
+  .about__info {
+    max-width: 470px;
+  }
+  .work-item {
+    left: 50%;
+    -webkit-transform: scale(0.9) translateX(-56%);
+    -ms-transform: scale(0.9) translateX(-56%);
+    transform: scale(0.9) translateX(-56%);
+  }
+  .team {
+    padding-bottom: 50px;
+  }
+  .team-item {
+    padding: 30px 0;
+  }
+  .team-item:before {
+    display: none;
+  }
+  .team-item > div {
+    margin: 0 10px;
+  }
+  .team-img {
+    width: 50%;
+    overflow: hidden;
+  }
+  .team-img img {
+    left: 50% !important;
+    right: auto;
+    width: auto;
+    height: 300px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .team-info {
+    width: 50%;
+  }
+  .vacancy h2 + .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .vacancy-list {
+    max-width: 100%;
+  }
+  .contacts .location-check p {
+    padding: 60px 5px 15px !important;
+  }
+  .vacancy-info {
+    text-align: center;
+  }
+  .vacancy-text {
+    text-align: left;
+  }
+  .invite {
+    float: none;
   }
 }

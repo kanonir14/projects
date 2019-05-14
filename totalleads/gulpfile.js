@@ -63,7 +63,7 @@ gulp.task('css', function(){
     .pipe(sass(sassOptions).on('error', sass.logError))
     // .pipe(cssmin())
     .pipe(autoprefixer({
-        browsers: ['last 5 versions'],
+        browsers: ['last 12 versions'],
         cascade: false
     }))
     .pipe(gulp.dest('app/css'))

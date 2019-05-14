@@ -125,7 +125,7 @@ h3{
 		left: 0;
 		top: 0;
 		bottom: 0;
-		width: 33vw;
+		width: 20vw;
 		background: $color-dark-grey;
 	}
 
@@ -136,23 +136,27 @@ h3{
 }
 
 .logo{
+	position: relative;
 	width: 100%;
 	max-width: 25%;
+	height: 81px;
+	line-height: 105px;
+	background: $color-dark-grey;
 	z-index: 2;
 
-	// &:after{
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: calc(100vw - 69%);
-	//     display: inline-block;
-	//     width: 0;
-	//     height: 0;
-	//     border-style: solid;
-	//     border-width: 0 40px 81px 0;
-	//     border-color: transparent $color-red transparent transparent;
-	// 	z-index: 3;
-	// }
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+	    display: inline-block;
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    border-width: 0 40px 81px 0;
+	    border-color: transparent $color-red transparent transparent;
+		z-index: 3;
+	}
 }
 
 .nav{
@@ -167,6 +171,7 @@ h3{
 			color: #fff;
 			text-decoration: none;
 			text-transform: uppercase;
+			transition: all .2s ease-in;
 
 			&:hover{
 				background: darken($color-red, 8%);
@@ -686,7 +691,7 @@ h3{
 // vacancy
 
 .vacancy{
-	padding: 40px 0;
+	padding: 0 0 40px;
 
 	.container{
 		overflow: inherit;
@@ -988,6 +993,10 @@ h3{
 .contacts{
 	width: 100%;
 	padding: 60px 0 0;
+
+	h2{
+		margin-bottom: 50px;
+	}
 
 	.row{
 		position: relative;

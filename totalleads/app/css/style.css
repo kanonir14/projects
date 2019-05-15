@@ -11,6 +11,7 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
 }
 
 html, body, div, span, object, iframe,
@@ -176,6 +177,10 @@ strong {
   padding: 10px;
   font-size: 16px;
   line-height: 30px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 0 #000;
+  box-shadow: inset 0 0 0 #000;
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: all .2s ease-out;
   -o-transition: all .2s ease-out;
@@ -195,6 +200,10 @@ strong {
   font-size: 16px;
   line-height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 0 #000;
+  box-shadow: inset 0 0 0 #000;
   -webkit-transition: all .2s ease-out;
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
@@ -392,6 +401,7 @@ h3:before {
   width: 100%;
   max-width: 25%;
   height: 81px;
+  padding-left: 10px;
   line-height: 105px;
   background: #363636;
   z-index: 2;
@@ -993,8 +1003,8 @@ h3:before {
 
 .vacancy .item {
   position: relative;
-  width: -webkit-calc((100% - 40px * 2) / 4);
-  width: calc((100% - 40px * 2) / 4);
+  width: -webkit-calc((100% - 50px * 2) / 4);
+  width: calc((100% - 50px * 2) / 4);
   margin: 10px 10px;
   padding: 30px 20px;
   min-height: 200px;
@@ -1613,5 +1623,383 @@ h3:before {
   }
   .invite {
     float: none;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  h3 {
+    font-size: 30px;
+  }
+  .container {
+    max-width: 768px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h1 span {
+    font-size: 45px;
+  }
+  h1 br {
+    display: none;
+  }
+  .navigation:before {
+    width: 35vw;
+  }
+  .logo {
+    width: 35%;
+  }
+  .logo:after {
+    display: none;
+  }
+  .nav {
+    width: 65%;
+  }
+  .header {
+    min-height: 500px;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__info {
+    max-width: 100%;
+  }
+  .about__text {
+    left: auto;
+    width: 100%;
+    -webkit-box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.27);
+    box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.27);
+  }
+  .about__contacts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .about__contacts > * {
+    padding: 0 10px;
+  }
+  .work {
+    padding-bottom: 20px;
+  }
+  .work h2 {
+    margin-bottom: 40px;
+  }
+  .work-item {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    background: transparent;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    left: auto;
+  }
+  .min, .max {
+    display: none;
+  }
+  .work-list {
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .work-list li {
+    width: 100%;
+    max-width: 45%;
+    margin-left: 30px;
+    position: static;
+    font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    text-align: left !important;
+    font-size: 18px;
+    list-style: decimal-leading-zero;
+    padding: 10px;
+    border-bottom: 1px solid rgba(231, 52, 44, 0.2);
+  }
+  .work-btn {
+    top: auto;
+    bottom: 480px;
+  }
+  .team {
+    padding: 0;
+  }
+  .team-info__icon {
+    width: 80px;
+  }
+  .team-info__icon img {
+    width: 100%;
+  }
+  .contacts .location-check p {
+    font-size: 16px;
+  }
+  .vacancy .item {
+    min-height: 160px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .team-info__icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .navigation:before {
+    width: 100%;
+  }
+  .services .row {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .services .item {
+    max-width: -webkit-calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+  .work-btn {
+    bottom: 400px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .team-img {
+    display: none;
+  }
+  .team-info {
+    width: 80%;
+  }
+  .vacancy .item {
+    width: -webkit-calc((100% - 40px * 2) / 3);
+    width: calc((100% - 40px * 2) / 3);
+  }
+  .vacancy-info h2 {
+    text-align: center;
+  }
+  .vacancy-info h2:after {
+    content: '';
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .contacts .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: url("../img/kyiv-map.png") no-repeat center center/cover;
+  }
+  .contacts .row:after {
+    display: none;
+  }
+  .contacts .location {
+    width: 100%;
+    background: transparent;
+    padding: 30px 0;
+  }
+  .contacts .location:last-child {
+    padding-bottom: 130px;
+  }
+  .scroll-top {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 20px;
+  }
+  h1 span {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .header {
+    min-height: 400px;
+  }
+  .counts .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .counts .item {
+    max-width: 100%;
+    margin: 0;
+  }
+  .services .item {
+    height: 150px;
+  }
+  .services .item__info span {
+    font-size: 15px;
+  }
+  .about {
+    padding-bottom: 20px;
+  }
+  .about h2 span {
+    font-size: 40px;
+  }
+  .about__text {
+    padding: 30px;
+    text-align: justify;
+  }
+  .about__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .work-list li {
+    max-width: 100%;
+  }
+  .work-item {
+    min-height: 850px;
+  }
+  .team-info {
+    width: 100%;
+  }
+  .vacancy .item {
+    width: -webkit-calc((100% - 20px * 2) / 2);
+    width: calc((100% - 20px * 2) / 2);
+  }
+  .vacancy h2 span {
+    font-size: 50px;
+  }
+  .vacancy-text {
+    padding: 30px;
+  }
+  .contacts .location-check {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contacts .location-check p {
+    border-width: 0px;
+  }
+  .footer .col {
+    width: 100%;
+  }
+  .outer {
+    width: 100%;
+    max-width: 260px;
+    top: 447px;
+  }
+  .remodal {
+    padding: 35px 10px !important;
+  }
+  .remodal-title {
+    font-size: 18px;
+  }
+  .remodal-content {
+    padding: 20px 0 80px 0;
+  }
+  .remodal-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .remodal-footer > div {
+    padding: 0;
+    width: 100%;
+    display: block;
+    text-align: right;
+  }
+  .remodal-mail {
+    left: 10px;
+  }
+  .remodal-footer__text {
+    font-size: 20px;
+    padding-bottom: 10px !important;
+  }
+  .remodal-footer__text:after {
+    display: none;
+  }
+  .order-form i {
+    top: 2px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  h1 span {
+    font-size: 30px;
+  }
+  .services .item {
+    max-width: -webkit-calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+    height: 230px;
+  }
+  .services .item__info span {
+    font-size: 25px;
+  }
+  .team-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .team-info__icon {
+    margin: auto;
+  }
+  .team-info__text {
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .vacancy-info {
+    padding-left: 0;
+  }
+  .invite:before {
+    right: 20%;
+  }
+  .invite:after {
+    right: 60%;
+  }
+  .invite p {
+    padding-top: 90px;
+    padding-right: 0;
+  }
+  .remodal-mail {
+    display: none;
+  }
+  .vacancy h5 {
+    font-size: 14px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
   }
 }

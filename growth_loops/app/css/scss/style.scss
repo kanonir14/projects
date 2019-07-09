@@ -1,0 +1,163 @@
+@import "_var.scss";
+@import "_mixins.scss";
+@import "normalize.scss";
+@import "fonts.scss";
+@import "components.scss";
+
+h1{
+	font-size: 50px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+
+.flex{
+	@include display(flex);
+}
+.flex-center{
+	@include justify-content(center);
+}
+.flex-between{
+	@include justify-content(space-between);
+}
+.flex-items{
+	@include align-items(center);
+}
+.flex-column{
+	@include flex-direction(column);
+}
+.flex-wrap{
+	@include flex-wrap(wrap);
+}
+
+.color-orange{
+	color: $color_orange;
+}
+
+
+// header
+.header{
+	padding: 36px 0 0;
+	background: url('../img/main_header.jpg') $color_blue_darken no-repeat center top / cover;
+
+	h1{
+		width: 100%;
+		max-width: 660px;
+		margin: auto;
+		line-height: 1.1;
+		color: $color_white;
+		text-align: center;
+
+		span{
+			display: block;
+
+			&:first-child{
+				font-size: 70px;
+			}
+
+			&:last-child{
+				position: relative;
+				top: -4px;
+				font-size: 70px;
+				font-weight: bold;
+				color: $color_blue;
+			}
+		}
+	}
+
+	.container{
+		padding-bottom: 50px;
+	}
+
+	&__descr{
+		width: 100%;
+		max-width: 620px;
+		margin: 55px auto;
+		font-size: 28px;
+		text-align: center;
+		color: $color_white;
+
+		span:last-child{
+			display: block;
+		}
+	}
+}
+
+.logo{
+	text-align: center;
+
+	a{
+		outline: none;
+
+		img{
+			width: 100%;
+			max-width: 214px;
+		}
+	}
+}
+
+.navigation{
+	width: 100%;
+	max-width: 950px;
+	margin: 10px auto 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	a{
+		display: block;
+		padding: 16px;
+		line-height: 1;
+		border-radius: 40px;
+		font-size: 18px;
+		color: $color_white;
+		text-transform: uppercase;
+		text-decoration: none;
+		border: 1px solid transparent;
+		transition: $transition-default;
+
+		&:hover{
+			border-color: $color_blue;
+		}
+	}
+}
+
+.partners{
+	margin-top: 10px;
+	padding: 15px 0;
+	background: $color_blue_darken;
+
+	&__list{
+		width: 100%;
+		max-width: 1120px;
+		height: 90px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		li{
+			display: flex;
+			align-items: center;
+			position: relative;
+			height: 100%;
+
+			&:after{
+				content: '';
+				position: absolute;
+				left: 50%;
+				bottom: -15px;
+				width: 0;
+				height: 0;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 12px solid $color_white;
+			}
+		}
+	}
+}
+
+
+//      MEDIA
+
+@import "media.scss";

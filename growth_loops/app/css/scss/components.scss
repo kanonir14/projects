@@ -1,0 +1,32 @@
+// btn
+
+.btn-wrap{
+	text-align: center;
+}
+
+.btn{
+	position: relative;
+	display: inline-block;
+	padding: 20px 30px;
+	line-height: 1;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: $radius-40;
+	transition: $transition-default;
+	box-shadow: 0 12px 10px rgba(0,0,0,0.2);
+
+	&:hover{
+		box-shadow: 0 0 0 rgba(0,0,0,0.6);
+	}
+
+	&-orange{
+		background: $color_orange_contrast;
+		font-size: 18px;
+		color: $color_white;
+
+		&:hover{
+			background: darken($color_orange_contrast, 5%);
+		}
+		
+	}
+}

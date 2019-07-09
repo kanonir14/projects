@@ -1,0 +1,533 @@
+@media screen and (min-width: 2200px) {
+	.navigation:before{
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 3900px) {
+	.navigation:before{
+		width: 39%;
+	}
+}
+
+@media screen and (max-width: 1350px) {
+
+	h1{
+		position: relative;
+		z-index: 3;
+	}
+
+	.container{
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.header{
+		min-height: 740px;
+	}
+
+	.services {
+
+		.item{
+			height: 210px;
+
+			&__info {
+				font-size: 18px;
+
+				span{
+					font-size: 20px;
+				}
+			}
+
+			
+		}
+	}
+
+	.about__info{
+		max-width: 470px;
+	}
+
+	.work-item{
+		left: 50%;
+		transform: scale(.9) translateX(-56%);
+	}
+
+	.team{
+		padding-bottom: 50px;
+	}
+
+	.team-item{
+		padding: 30px 0;
+
+		&:before{
+			display: none;
+		}
+
+		> div{
+			margin: 0 10px;
+		}
+	}
+
+	.team-img{
+		width: 50%;
+		overflow: hidden;
+
+		img{
+			left: 50% !important;
+			right: auto;
+			width: auto;
+			height: 300px;
+			transform: translateX(-50%);
+		}
+	}
+
+	.team-info{
+		width: 50%;
+	}
+
+	.vacancy {
+
+		h2 + .row{
+			flex-direction: column;
+		}
+
+		&-list{
+			max-width: 100%;
+		}
+
+	}
+
+	.contacts .location-check p{
+		padding: 60px 5px 15px !important;
+	}
+
+	.vacancy-info{
+		text-align: center;
+	}
+
+	.vacancy-text{
+		text-align: left;
+	}
+
+	.invite{
+		float: none;
+	}
+
+}
+
+@media screen and (max-width: 989px) {
+
+	h3{
+		font-size: 30px;
+	}
+
+	.container{
+		max-width: 768px;
+	}
+	h1{
+		font-size: 40px;
+
+		span{
+			font-size: 45px;
+		}
+
+		br{
+			display: none;
+		}
+	}
+
+	.navigation:before{
+		width: 35vw;
+	}
+
+	.logo{
+		width: 35%;
+
+		&:after{
+			display: none;
+		}
+	}
+
+	.nav{
+		width: 65%;
+	}
+
+	.header{
+		min-height: 500px;
+	}
+
+	.about__img{
+		display: none;
+	}
+
+	.about__info{
+		max-width: 100%;
+	}
+
+	.about__text{
+		left: auto;
+		width: 100%;
+		box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.27);
+	}
+
+	.about__contacts{
+		display: flex;
+		justify-content: center;
+
+		> *{
+			padding: 0 10px;
+		}
+	}
+
+	.work{
+		padding-bottom: 20px;
+	}
+
+	.work h2{
+		margin-bottom: 40px;
+	}
+
+	.work-item{
+		width: 100%;
+		height: auto;
+		min-height: 700px;
+		background: transparent;
+		transform: scale(1);
+		left: auto;
+	}
+
+	.min, .max{
+		display: none;
+	}
+
+	.work-list{
+		position: static;
+		display: flex;
+		flex-wrap: wrap;
+
+		li{
+			width: 100%;
+			max-width: 45%;
+			margin-left: 30px;
+			position: static;
+			font-family: $font-roman;
+			text-align: left !important;
+			font-size: 18px;
+			// text-transform: uppercase;
+			list-style: decimal-leading-zero;
+			padding: 10px;
+			border-bottom: 1px solid rgba(231, 52, 44, .2);
+		}
+	}
+
+	.work-btn{
+		// display: none;
+		top: auto;
+		bottom: 480px;
+	}
+
+	// 
+
+	.team{
+		padding: 0;
+	}
+	.team-info__icon{
+		width: 80px;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.contacts .location-check p{
+		font-size: 16px;
+	}
+
+	.vacancy .item{
+		min-height: 160px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+	.team-info__icon{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.nav{
+		display: none;
+	}
+
+	.logo{
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.navigation:before{
+		width: 100%;
+	}
+
+	.services .row{
+		flex-wrap: wrap;
+	}
+
+	.services .item{
+		max-width: calc(50% - 2rem);
+	}
+
+	.work-btn{
+		bottom: 400px;
+		transform: scale(.8);
+	}
+
+	.team-img{
+		display: none;
+	}
+
+	.team-info{
+		width: 80%;
+	}
+
+	.vacancy .item{
+		width: calc((100% - 40px * 2) / 3);
+	}
+
+	.vacancy-info h2{
+		text-align: center;
+
+		&:after{
+			content: '';
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.contacts .row{
+		flex-direction: column;
+		justify-content: center;
+		background: url("../img/kyiv-map.png") no-repeat center center/cover;
+
+		&:after{
+			display: none;
+		}
+	}
+
+	.contacts .location{
+		width: 100%;
+		background: transparent;
+		padding: 30px 0;
+
+		&:last-child{
+			padding-bottom: 130px;
+		}
+	}
+
+	.scroll-top{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	h1{
+		font-size: 20px;
+
+		span{
+			font-size: 35px;
+		}
+	}
+
+	h2{
+		font-size: 27px;
+	}
+
+	h3{
+		font-size: 24px;
+	}
+
+	.header{
+		min-height: 400px;
+	}
+
+	.counts .row{
+		flex-direction: column;
+	}
+
+	.counts .item{
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.services .item{
+		height: 150px;
+	}
+
+	.services .item__info span{
+		font-size: 15px;
+	}
+
+	.about{
+		padding-bottom: 20px;
+	}
+
+	.about h2 span{
+		font-size: 40px;
+	}
+
+	.about__text{
+		padding: 30px;
+		text-align: justify;
+	}
+
+	.about__contacts{
+		flex-direction: column;
+	}
+
+	.work-list li{
+		max-width: 100%;
+	}
+
+	.work-item{
+		min-height: 850px;
+	}
+
+	.team-info{
+		width: 100%;
+	}
+
+	.vacancy .item{
+		width: calc((100% - 20px * 2) / 2);
+	}
+
+	.vacancy h2 span{
+		font-size: 50px;
+	}
+
+	.vacancy-text{
+		padding: 30px;
+	}
+
+	.contacts .location-check{
+		flex-direction: column;
+	}
+
+	.contacts .location-check p{
+		border-width: 0px;
+	}
+
+	.footer .col{
+		width: 100%;
+	}
+
+	.outer{
+		width: 100%;
+		max-width: 260px;
+		top: 447px;
+	}
+
+	.remodal{
+		padding: 35px 10px !important;
+	}
+
+	.remodal-title{
+		font-size: 18px;
+	}
+
+	.remodal-content{
+		padding: 20px 0 80px 0;
+	}
+
+	.remodal-footer{
+		flex-direction: column;
+
+		> div{
+			padding: 0;
+			width: 100%;
+			display: block;
+			text-align: right;
+		}
+	}
+
+	.remodal-mail{
+		left: 10px;
+	}
+
+	.remodal-footer__text{
+		font-size: 20px;
+		padding-bottom: 10px !important;
+
+		&:after{
+			display: none;
+		}
+	}
+
+	.order-form i{
+		top: 2px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	h1 span{
+		font-size: 30px;
+	}
+
+	.services .item{
+		max-width: calc(100% - 2rem);
+		height: 230px;
+	}
+
+	.services .item__info span{
+		font-size: 25px;
+	}
+
+	.team-info{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.team-info__icon{
+		margin: auto;
+	}
+
+	.team-info__text{
+		margin-top: 20px;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.vacancy-info{
+		padding-left: 0;
+	}
+
+	.invite{
+
+		&:before{
+			right: 20%;
+		}
+
+		&:after{
+			right: 60%;
+		}
+
+		p{
+			padding-top: 90px;
+			padding-right: 0;
+		}
+	}
+
+	.remodal-mail{
+		display: none;
+	}
+
+	.vacancy h5{
+		font-size: 14px;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+	}
+
+
+}

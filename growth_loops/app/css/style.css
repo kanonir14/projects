@@ -219,6 +219,17 @@ h1 {
   color: #ffa239;
 }
 
+.color-blue {
+  color: #3cb3e8;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header {
   padding: 36px 0 0;
   background: url("../img/main_header.jpg") #3b4c9d no-repeat center top/cover;
@@ -365,4 +376,276 @@ h1 {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 12px solid #fff;
+}
+
+.info {
+  position: relative;
+  padding: 140px 0;
+  font-size: 20px;
+}
+
+.info .arrow-left {
+  position: absolute;
+  top: 51%;
+  left: 0;
+  width: 40%;
+  height: 1px;
+  background: #3cb3e8;
+}
+
+.info .arrow-left:after {
+  content: '';
+  position: absolute;
+  right: -2px;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #3cb3e8;
+}
+
+.info .arrow-right {
+  position: absolute;
+  top: 37%;
+  right: 0;
+  width: 14%;
+  height: 1px;
+  background: #3cb3e8;
+}
+
+.info .arrow-right:before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #3cb3e8;
+}
+
+.info .container {
+  overflow: inherit;
+}
+
+.info p {
+  max-width: 920px;
+}
+
+.info-icons {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  max-width: 775px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.info .icon-box {
+  position: absolute;
+  width: 183px;
+  height: 182px;
+}
+
+.info .icon-box:nth-child(1) {
+  right: 120px;
+  top: -180px;
+}
+
+.info .icon-box:nth-child(2) {
+  right: 30px;
+  top: -90px;
+}
+
+.info .icon-box:nth-child(3) {
+  right: 210px;
+  top: -90px;
+}
+
+.info .icon-box:nth-child(4) {
+  right: 300px;
+  top: 0px;
+}
+
+.info .icon-box:nth-child(5) {
+  right: 390px;
+  top: 90px;
+}
+
+.info .icon-box:nth-child(6) {
+  right: 480px;
+  top: 0px;
+}
+
+.info .icon-box:nth-child(7) {
+  right: 570px;
+  top: 90px;
+}
+
+.info .icon-box:nth-child(8) {
+  right: 660px;
+  top: 0px;
+}
+
+.service h2, .work h2 {
+  position: relative;
+  font-size: 50px;
+  line-height: 1.1;
+  font-weight: 300;
+  text-align: center;
+  color: #3cb3e8;
+}
+
+.service h2:after, .work h2:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  width: 46px;
+  height: 16px;
+  background: url("../img/icon-arrow-right.png") no-repeat center center/contain;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.service h2 span, .work h2 span {
+  display: block;
+  font-size: 88px;
+}
+
+.service {
+  position: relative;
+  padding: 50px 0;
+}
+
+.service h2 {
+  position: absolute;
+  top: 240px;
+  left: 100px;
+  width: 100%;
+  max-width: 300px;
+  z-index: 5;
+}
+
+.service .container {
+  position: relative;
+  overflow: inherit;
+}
+
+.service-img {
+  position: relative;
+  width: 100%;
+  max-width: 690px;
+}
+
+.service-img img {
+  position: absolute;
+  left: -92%;
+  top: -210px;
+}
+
+.service-list {
+  position: relative;
+  width: 100%;
+  max-width: 660px;
+  left: -30px;
+}
+
+.service-list li {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 0 10px;
+  border-bottom: 1px solid #aedff5;
+}
+
+.service-list li:first-child, .service-list li:last-child {
+  left: -80px;
+}
+
+.service-list li:nth-child(2), .service-list li:nth-child(7) {
+  left: -40px;
+}
+
+.service-list li:nth-child(3), .service-list li:nth-child(6) {
+  left: -20px;
+}
+
+.service-list a {
+  font-size: 28px;
+  color: #000;
+  text-decoration: none;
+}
+
+.service-list a span {
+  display: block;
+  font-size: 20px;
+}
+
+.service-list .list-img {
+  width: 100px;
+  text-align: center;
+}
+
+.work {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.work h2 {
+  margin-bottom: 60px;
+}
+
+.work .container {
+  overflow: initial;
+}
+
+.work-info {
+  width: 100%;
+  max-width: 660px;
+}
+
+.work-img {
+  position: relative;
+  width: 100%;
+  max-width: 690px;
+}
+
+.work-list {
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.work-list li {
+  position: relative;
+  padding: 10px 0;
+}
+
+.work-list li:before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffa239;
+}
+
+.work-list li span {
+  font-weight: bold;
+}
+
+.test {
+  fill: red;
 }

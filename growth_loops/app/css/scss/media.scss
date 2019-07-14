@@ -1,0 +1,358 @@
+@media screen and (max-width: 1350px) {
+	.container{
+		width: 100%;
+		padding: 0 10px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 1300px) {
+	.partners__list{
+		padding: 0 10px;
+
+		img{
+			width: 95%;
+		}
+	}
+
+	.info{
+		padding-bottom: 40px;
+
+		p{
+			max-width: 620px;
+		}
+	}
+
+	.service h2{
+		position: relative;
+		left: 0;
+		top: 0;
+		margin: auto;
+	}
+
+	.service-img{
+		display: none;
+	}
+
+	.service-list{
+		left: 0;
+		margin: 50px auto 0;
+
+		li{
+			left: 0 !important;
+		}
+	}
+
+	.work-img{
+		max-width: 390px;
+	}
+
+	.process{
+		height: auto;
+	}
+
+	.process .item{
+		&:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7) {
+			width: 50%;
+		}
+
+		.step{
+			width: 50%;
+		}
+	}
+
+	.review .title{
+		width: 100%;
+	}
+
+	.review .row{
+		align-items: flex-start;
+	}
+
+	.review .item{
+		flex-wrap: wrap;
+		text-align: center;
+
+		&-img{
+			margin: 0 auto 20px;
+		}
+	}
+
+	.case .item-info{
+		flex-wrap: wrap;
+
+		p{
+			margin: 15px 0;
+		}
+	}
+
+	.footer{
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.container{
+		max-width: 768px;
+		margin: auto;
+	}
+
+	.js-menu-show{
+		height: auto !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+
+	.js-rotation:after{
+		transform: rotate(180deg) !important;
+	}
+
+	.toggle-nav{
+		display: block;
+	}
+
+	.mobile-header{
+		display: flex;
+	}
+
+	.logo a img{
+		max-width: 120px;
+	}
+
+	.navigation{
+		display: none;
+		position: absolute;
+		right: 50px;
+		top: 90px;
+		flex-direction: column;
+		align-items: flex-end;
+		max-width: 320px;
+		background: $color_blue_darken;
+		border: 2px solid darken($color_blue_darken, 10%);
+		z-index: 100;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+
+		li{
+			width: 100%;
+		}
+
+		li:hover{
+			background: lighten($color_blue_darken, 5%);
+		}
+
+		a{
+			border: 0;
+
+			&:hover{
+			 	border-radius: 0;
+			 	border: 0;
+			}
+		}
+	}
+
+	.sub-menu{
+		position: relative;
+		top: 0px;
+		width: 316px;
+		height: 0;
+		transition: 0s;
+
+		&:before{
+			display: none;
+		}
+	}
+
+	.partners img{
+		max-width: 90%;
+	}
+
+	.info-icons{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.info .icon-box{
+		position: static;
+		width: 25%;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.info .arrow-left, .info .arrow-right{
+		display: none;
+	}
+
+	.work-info{
+		max-width: 100%;
+	}
+
+	.work-img{
+		display: none;
+	}
+
+	.process .item-img{
+		width: 100px;
+		height: 100px;
+
+		img{
+			width: 60%;
+		}
+	}
+
+	.process .item-title{
+		margin-top: -30px;
+	}
+
+	.connect{
+		padding: 50px 0;
+	}
+
+	.footer .row{
+		flex-wrap: wrap;
+	}
+
+	.footer-logo{
+		max-width: 100%;
+		padding-bottom: 20px;
+	}
+
+	.footer .col{
+		padding-left: 20px;
+	}
+
+	.col-pages{
+		max-width: 33% !important;
+	}
+
+	.col-services{
+		max-width: 66% !important;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.process .item{
+		width: 100% !important;
+	}
+
+	.service h2 span, .work h2 span, .process h2 span, .review h2 span, .case h2 span, .page-header h1 span {
+	    font-size: 68px;
+	}
+
+	.info{
+		padding-bottom: 30px;
+	}
+
+	.info-icons{
+		height: auto;
+	}
+	.info .icon-box{
+		height: auto;
+	}
+
+	.case .item{
+		flex-wrap: wrap;
+	}
+
+	.case .percent{
+		height: auto;
+		max-width: 100%;
+	}
+
+	.case .item-info{
+		padding: 40px;
+	}
+
+	.case .read-more{
+		max-width: 100%;
+		padding: 20px;
+	}
+
+	.connect-descr{
+		font-size: 21px;
+	}
+
+	.connect h3{
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	h1{
+		font-size: 35px;
+	}
+
+	.main-header h1 span:first-child{
+		font-size: 50px;
+	}
+
+	.main-header h1 span:last-child{
+		font-size: 50px;
+	}
+
+	.header__descr{
+		font-size: 24px;
+	}
+
+	.partners{
+		display: none;
+	}
+
+	.btn{
+		padding: 20px;
+	}
+
+	.info{
+		padding-top: 30px;
+		font-size: 18px;
+		text-align: justify;
+	}
+
+	.info .icon-box{
+		width: 33%;
+	}
+
+	.service-list a{
+		font-size: 21px;
+	}
+
+	.review .item{
+		width: 100%;
+	}
+
+	.order-form button{
+		padding: 7px 30px;
+		line-height: 1.5;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.footer .row > div{
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+	.main-header h1 span:first-child{
+		font-size: 40px;
+	}
+
+	.main-header h1 span:last-child{
+		font-size: 40px;
+	}
+
+	.header__descr{
+		font-size: 20px;
+	}
+
+	.review .item-img{
+		width: 125px;
+		height: 125px;
+	}
+
+	.connect h3{
+		font-size: 30px;
+	}
+}

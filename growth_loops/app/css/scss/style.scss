@@ -51,7 +51,13 @@ h1{
 	top: 60px;
 	width: 30px;
 	height: 30px;
-	background: $color_white;
+	background: url('../img/hamburger.png') no-repeat center center / contain;
+
+	&-close{
+		height: 28px;
+		background-size: cover;
+		background-image: url('../img/close.png');
+	}
 }
 
 .row{
@@ -200,6 +206,7 @@ h1{
 	z-index: 10;
 	box-shadow: 5px 10px 10px rgba(0,0,0,0.1);
 	transition: $transition-default;
+	transition-delay: .3s;
 
 	&:before{
 		content: '';
@@ -475,6 +482,14 @@ h1{
 			align-items: center;
 			padding: 8px 0 10px;
 			border-bottom: 1px solid lighten($color_blue, 25%);
+
+			&:hover{
+				border-bottom: 1px solid $color_orange;
+
+				a{
+					color: $color_orange;
+				}
+			}
 
 			&:first-child, &:last-child{
 				left: -80px;
@@ -1049,7 +1064,7 @@ h1{
 }
 
 .post{
-	width: 100%;
+	width: 29%;
 	max-width: 305px;
 	margin: 15px;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.15);

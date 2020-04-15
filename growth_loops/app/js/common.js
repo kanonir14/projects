@@ -12,15 +12,22 @@ $(document).ready(function() {
 
 		$(".toggle-nav").click(function(event) {
 			$(".navigation").toggle();
+			$(this).toggleClass('toggle-nav-close');
 		});
 	}
 
 	// contact form
 
-	var mark = $(".contact-mark"),
+	var service_mark = $(".contact-service .contact-mark"),
+		contact_mark = $(".contact-budget .contact-mark"),
 		input = $(".contact input");
 
-	mark.click(function(event) {
+	service_mark.click(function(event) {
+		$(this).toggleClass('js-enable-mark');
+	});
+
+	contact_mark.click(function(event) {
+		contact_mark.removeClass('js-enable-mark');
 		$(this).toggleClass('js-enable-mark');
 	});
 

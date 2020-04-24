@@ -68,6 +68,10 @@ img, button, a, input, textarea{
 	box-shadow: 0 0 0 black;
 }
 
+button::-moz-focus-inner {
+  border: 0;
+}
+
 img{
 	user-select: none;
 }

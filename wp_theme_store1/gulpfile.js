@@ -3,15 +3,23 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
+    pxtorem = require('gulp-pxtorem'),
     browserSync = require('browser-sync'),
     del = require('del'),
     imagemin = require("gulp-imagemin"),
     autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify');
 
 var sassOptions = {
     errLogConsole: false,
     outputStyle: 'expanded'
+};
+
+var pxtoremOptions = {
+    rootValue: 16,
+    propList: ['*'],
+    selectorBlackList: [/^body$/]
 };
 
  var path = {
@@ -60,16 +68,19 @@ function clean() {
 // css
 function styles() {
     return gulp.src(path.styles.src)
+        .pipe(sourcemaps.init())
         .pipe(sass(sassOptions)).on('error', sass.logError)
         // .pipe(cleanCSS())
         // .pipe(rename({
         //     basename: 'style',
         //     suffix: '.min'
         // }))
+        .pipe(pxtorem(pxtoremOptions))
         .pipe(autoprefixer({
             browsersList: ['last 5 versions'],
             cascade: false
         }))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.styles.src_css))
         .pipe(browserSync.stream());
 

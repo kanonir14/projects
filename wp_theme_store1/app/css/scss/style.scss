@@ -109,6 +109,7 @@ h3{
 	width: 100%;
 
 	.container{
+		position: relative;
 		display: flex;
 		align-items: center;
 	}
@@ -119,6 +120,15 @@ h3{
 	max-width: 169px;
 	height: auto;
 	user-select: none;
+
+	a{
+		display: inline-block;
+		width: 100%;
+
+		img{
+			width: 100%;
+		}
+	}
 }
 
 .nav{
@@ -212,12 +222,18 @@ h3{
 	&-img{
 		position: relative;
 		top: -55px;
+		max-width: 48%;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 
 // home main
 
-.home main{
+main{
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
@@ -444,7 +460,7 @@ h3{
 // single product page
 .content{
 	width: 100%;
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 	padding: 15px 70px 70px 70px;
 	background: $category-bg;
 	border-radius: 40px;
@@ -498,6 +514,10 @@ h3{
 		padding: 10px 30px 30px;
 		background: $accent;
 		border-radius: 30px;
+
+		img{
+			width: 100%;
+		}
 	}
 }
 

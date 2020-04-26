@@ -27,12 +27,11 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, main {
 	display: block;
 }
 html, body{
     width: 100%;
-	background: transparent;
 	font-family: $default-font;
 	font-weight: normal;
 	font-size: 18px;
@@ -65,7 +64,7 @@ button{
 img, button, a, input, textarea{
 	outline: none;
 	border: 0;
-	box-shadow: 0 0 0 black;
+	box-shadow: 0 0 0 rgba(0,0,0,0);
 }
 
 button::-moz-focus-inner {

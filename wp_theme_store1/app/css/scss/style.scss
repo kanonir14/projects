@@ -1,5 +1,8 @@
 @import "config/_var.scss";
 @import "config/_mixins.scss";
+// @import "fontawesome/fontawesome.scss";
+// @import "fontawesome/solid.scss";
+// @import "fontawesome/brands.scss";
 @import "_normalize.scss";
 @import "_fonts.scss";
 @import "_components.scss";
@@ -77,13 +80,15 @@ h3{
 		margin-right: 30px;
 
 		&:before{
-			content: '';
+			content: '\f002';
+			font-family: fontawesome;
 			position: absolute;
 			top: 50%;
 			left: 15px;
-			width: 18px;
-			height: 18px;
-			background: url('../img/icon/icon-search.png') no-repeat center center / contain;
+			// width: 18px;
+			// height: 18px;
+			color: $color-orange;
+			// background: url('../img/icon/icon-search.png') no-repeat center center / contain;
 			transform: translateY(-50%);
 		}
 
@@ -95,6 +100,7 @@ h3{
 			background: $color-coffee;
 			border-radius: 30px;
 			line-height: 46px;
+			min-height: 36px; // ie11
 
 			&:focus{
 				animation: pulse 2s infinite;
@@ -140,6 +146,7 @@ h3{
 		padding: 0 25px;
 
 		a{
+			font-size: 18px;
 			color: $default-grey;
 			text-decoration: none;
 
@@ -254,6 +261,7 @@ main{
 			width: calc(20% - 20px);
 			margin: 10px;
 			padding: 25px;
+			font-size: 18px;
 			color: $default-blue;
 			text-align: center;
 			text-decoration: none;
@@ -344,19 +352,23 @@ main{
 		bottom: 0;
 		top: 0;
 		background: rgba(0,0,0,0.7);
+		border-radius: 30px;
 		opacity: 0;
 		visibility: hidden;
 		transition: all .4s ease-out;
 
 		&:before{
-			content: '';
+			content: '\f06e';
+			font-family: fontawesome;
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			width: 40px;
-			height: 40px;
+			// width: 40px;
+			// height: 40px;
+			color: $color-white;
+			font-size: 40px;
 			transform: translate(-50%, -50%);
-			background: url('../img/icon/icon-view.png') no-repeat center center / contain;
+			// background: url('../img/icon/icon-view.png') no-repeat center center / contain;
 		}
 	}
 
@@ -394,6 +406,14 @@ main{
 		}
 	}
 
+	&-info{
+		@extend .old-price;
+
+		&:after{
+			display: none;
+		}
+	}
+
 	.new-price{
 		font-size: 26px;
 		margin-left: 10px;
@@ -408,6 +428,7 @@ main{
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 20px;
+		font-size: 18px;
 
 		.col:first-child{
 			width: 33%;
@@ -443,9 +464,11 @@ main{
 
 		li{
 			padding: 0 10px;
+			font-size: 18px;
 			text-align: right;
 
 			a{
+				font-size: 18px;
 				color: $default-blue;
 			}
 		}
@@ -568,13 +591,16 @@ main{
 		padding-left: 24px;
 
 		&:before{
-			content: '';
-			width: 19px;
-			height: 16px;
+			content: '\f14a';
+			font-family: fontawesome;
+			// width: 19px;
+			// height: 16px;
 			position: absolute;
 			left: 0;
 			top: 50%;
-			background: url('../img/icon/icon-check.png') no-repeat center center / contain;
+			color: $color-orange;
+			font-size: 18px;
+			// background: url('../img/icon/icon-check.png') no-repeat center center / contain;
 			transform: translateY(-50%);
 		}
 	}
@@ -614,6 +640,27 @@ main{
 	&-text{
 		width: 80%;
 		max-width: 1000px;
+	}
+}
+
+// basket page
+
+.basket-page {
+
+	.content-header{
+		padding-bottom: 0;
+	}
+}
+
+.cart-totals{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&__title{
+		font-size: 26px;
+		color: $default-grey;
 	}
 }
 

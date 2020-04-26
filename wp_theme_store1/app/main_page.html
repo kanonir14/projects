@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta content="initial-scale=1, width=device-width" name="viewport">
 </head>
-<body class="basket-page">
+<body class="home">
 
 <header class="header">
 	<div class="container">
@@ -24,7 +24,6 @@
 </header>
 
 <div class="wrapper">
-	<!-- nav -->
 	<!-- nav -->
 	<div class="navigation">
 		<div class="container">
@@ -57,113 +56,73 @@
 		</div>
 	</div>
 
-	<div class="content">
+	<!-- wrapper-header -->
+	<section class="banner">
 		<div class="container">
-			<div class="content-header">
-				<div class="bradcrumbs">
-					<span><a href="#">Главная</a></span>
-					<span>Корзина</span>
-				</div>
-				<h1>Корзина товаров</h1>
-			</div>
-			<div class="primary">
-				<form class="woocommerce-cart-form" action="#">
-					<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents">
-						<thead>
-							<tr>
-								<th class="product-thumbnail">&nbsp;</th>
-								<th class="product-name">Название</th>
-								<th class="product-price">Цена</th>
-								<th class="product-subtotal">Подытог</th>
-								<th class="product-remove">&nbsp;</th>
-							</tr>
-						</thead>
-						
-						<tr>
-							<td class="product-thumbnail">
-								<a href="#"><img src="img/card-thumb.png" alt=""></a>
-							</td>
-							<td class="product-name" data-title="Название"><a href="#">Samsung galaxy s8</a></td>
-							<td class="product-price" data-title="Цена">40$</td>
-							<td class="product-subtotal" data-title="Подытог">40$</td>
-							<td class="product-remove"><a href="#"><i class="far fa-trash-alt"></i></a></td>
-						</tr>
-						<tr>
-							<td class="product-thumbnail">
-								<a href="#"><img src="img/card-thumb.png" alt=""></a>
-							</td>
-							<td class="product-name" data-title="Название"><a href="#">Samsung galaxy s8</a></td>
-							<td class="product-price" data-title="Цена">40$</td>
-							<td class="product-subtotal" data-title="Подытог">40$</td>
-							<td class="product-remove"><a href="#"><i class="far fa-trash-alt"></i></a></td>
-						</tr>
-						<tr>
-							<td class="product-thumbnail">
-								<a href="#"><img src="img/card-thumb.png" alt=""></a>
-							</td>
-							<td class="product-name" data-title="Название"><a href="#">Rovus arctic landing</a></td>
-							<td class="product-price" data-title="Цена">40$</td>
-							<td class="product-subtotal" data-title="Подытог">40$</td>
-							<td class="product-remove"><a href="#"><i class="far fa-trash-alt"></i></a></td>
-						</tr>
-						<tr>
-							<td class="actions" colspan="5">
-								<div class="coupon">
-									<input type="text" id="coupon_code" name="coupon_code" placeholder="Скидочный купон">
-									<button type="submit" name="apply_coupon" class="btn btn-card btn-card--xs">Применить</button>
-								</div>
-								<button type="submit" name="update_cart"><i class="fas fa-redo"></i> Обновить корзину</button>
-
-							</td>
-						</tr>
-					</table>
-				</form>
-				<div class="cart-totals">
-					<div class="cart-totals__title">Сумма заказа</div>
-					<div class="cart-subtotal">
-						<div class="price">
-							<div class="old-price">Подытог: 450$</div>
-							<div class="new-price">Итого: 390$</div>
-						</div>
+			<div class="banner-inner">
+				<div class="banner-info">
+					<h1>Конверсионные лендинги для паблишеров под любую CPA-сеть</h1>
+					<h3>Мы предлагем качественные лендинги, для работы с любой CPA-сетью</h3>
+					<div class="btn-wrap">
+						<a href="#" class="btn btn-blue">Просмотреть</a>
 					</div>
 				</div>
-			</div>
-			<!-- product sidebar -->
-			<div class="secondary">
-				<div class="secondary-info">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur maiores velit, non quasi voluptate voluptatem porro inventore hic! Adipisci!</p>
+				<div class="banner-img">
+					<img src="img/banner-img.png" alt="Каталог лендингов под любую CPA-сеть">
 				</div>
-
-				<div class="checkout-form">
-					<form action="#" class="checkout">
-						<div class="form-group">
-							<label for="billing_first_name" class="checkout-label">Имя <span>*</span></label>
-							<input type="text" name="billing_first_name" autocomplete="given-name" placeholder="Ваше имя" required="">
-						</div>
-						<div class="form-group">
-							<label for="billing_email" class="checkout-label">Email <span>*</span></label>
-							<input type="email" name="billing_email" autocomplete="email" placeholder="Ваше имя" required="">
-						</div>
-						<div class="form-group">
-							<textarea name="order_comments" id="order_comments" placeholder="Примечание к заказу (необязательно)" cols="30" rows="5"></textarea>
-						</div>
-						<div class="price">
-							<div class="price-info">Сумма заказа:</div>
-							<div class="new-price">120$</div>
-						</div>
-						<div class="form-group">
-							<button type="submit" id="place_order" name="woocommerce_checkout_place_order" class="btn btn-card btn-card--xl" >Оформить заказ</button>
-						</div>
-					</form>
-				</div>
-				
-				
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!--  -->
 	<main class="main">
+		<!-- category -->
+		<section class="category">
+			<h2>Категории</h2>			
+			<div class="category-list">
+				<a href="#" class="item">
+					<img src="img/icon/icon-1.png" alt="">
+					<h6>Здоровье и красота</h6>
+				</a>
+				<a href="#" class="item">
+					<img src="img/icon/icon-2.png" alt="">
+					<h6>Косметика и уход</h6>
+				</a>
+				<a href="#" class="item">
+					<img src="img/icon/icon-3.png" alt="">
+					<h6>Парфюмерия</h6>
+				</a>
+				<a href="#" class="item">
+					<img src="img/icon/icon-4.png" alt="">
+					<h6>Детские товары</h6>
+				</a>
+				<a href="#" class="item">
+					<img src="img/icon/icon-5.png" alt="">
+					<h6>Все для дома и сада</h6>
+				</a>
+				<a href="#" class="item">
+					<img src="img/icon/icon-6.png" alt="">
+					<h6>Электроника и гаджеты</h6>
+				</a>
+				<a href="#" class="item">
+					<img src="img/icon/icon-7.png" alt="">
+					<h6>Одежда и обувь</h6>
+				</a>
+				<a href="#" class="item">
+					<img src="img/icon/icon-8.png" alt="">
+					<h6>Часы и аксессуары</h6>
+				</a>
+				<a href="#" class="item">
+					<img src="img/icon/icon-9.png" alt="">
+					<h6>Автотовары</h6>
+				</a>
+				<a href="#" class="item">
+					<img src="img/icon/icon-10.png" alt="">
+					<h6>Туризм и охота</h6>
+				</a>
+			</div>
+		</section>
+
 		<!-- products -->
 		<section class="products">
 			<h2>Предложения</h2>
@@ -184,7 +143,7 @@
 					</div>
 					<div class="card-img">
 						<a href="#"><img src="img/card-thumb.png" alt=""></a>
-						<a href="#" class="card-view"><i class="icon-ciew"></i></a>
+						<a href="#" class="card-view"></a>
 					</div>
 					<div class="card-footer">
 						<div class="price">
@@ -212,7 +171,7 @@
 					</div>
 					<div class="card-img">
 						<a href="#"><img src="img/card-thumb.png" alt=""></a>
-						<a href="#" class="card-view"><i class="icon-ciew"></i></a>
+						<a href="#" class="card-view"></a>
 					</div>
 					<div class="card-footer">
 						<div class="price">
@@ -240,7 +199,7 @@
 					</div>
 					<div class="card-img">
 						<a href="#"><img src="img/card-thumb.png" alt=""></a>
-						<a href="#" class="card-view"><i class="icon-ciew"></i></a>
+						<a href="#" class="card-view"></a>
 					</div>
 					<div class="card-footer">
 						<div class="price">
@@ -268,7 +227,35 @@
 					</div>
 					<div class="card-img">
 						<a href="#"><img src="img/card-thumb.png" alt=""></a>
-						<a href="#" class="card-view"><i class="icon-ciew"></i></a>
+						<a href="#" class="card-view"></a>
+					</div>
+					<div class="card-footer">
+						<div class="price">
+							<div class="old-price">50$</div>
+							<div class="new-price">40$</div>
+						</div>
+						<div class="card-btn">
+							<button class="btn btn-card">В корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<h5><a href="#">Samsung Galaxy S10+</a></h5>
+					<div class="card-head">
+						<div class="card-category">
+							<a href="#">Электроника и гаджеты</a>
+						</div>
+						<div class="rating">
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+						</div>
+					</div>
+					<div class="card-img">
+						<a href="#"><img src="img/card-thumb.png" alt=""></a>
+						<a href="#" class="card-view"></a>
 					</div>
 					<div class="card-footer">
 						<div class="price">
@@ -282,7 +269,56 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- about -->
+		<section class="about">
+			<div class="container">
+				<div class="about-inner">
+					<div class="col">
+						<h4>Lorem ipsum</h4>
+						<h2>Что вы получите?</h2>
+						<div class="btn-wrap">
+							<a href="#" class="btn btn-blue">Просмотреть</a>
+						</div>
+					</div>
+					<div class="col">
+						<img src="img/icon/icon-11.png" alt="">
+						<h5>Research</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, distinctio.</p>
+					</div>
+					<div class="col">
+						<img src="img/icon/icon-12.png" alt="">
+						<h5>Research</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, distinctio.</p>
+					</div>
+					<div class="col">
+						<img src="img/icon/icon-13.png" alt="">
+						<h5>Research</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, distinctio.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
+
+	<!-- Subscribe banner -->
+	<section class="banner reverse">
+		<div class="container">
+			<div class="banner-inner">
+				<div class="banner-info">
+					<h1>Конверсионные лендинги для паблишеров под любую CPA-сеть</h1>
+					<h3>Мы предлагем качественные лендинги, для работы с любой CPA-сетью</h3>
+					<div class="btn-wrap">
+						<a href="#" class="btn btn-orange">Просмотреть</a>
+					</div>
+				</div>
+				<div class="banner-img">
+					<img src="img/banner-img-2.png" alt="Каталог лендингов под любую CPA-сеть">
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
 
 <footer class="footer">

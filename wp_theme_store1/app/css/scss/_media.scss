@@ -4,7 +4,14 @@
 		max-width: 1750px;
 	}
 }
-@media (min-width: 1024px) {
+
+@media screen and (min-width: 1921px) {
+	html, body{
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
 	@function get-vw($target) {   
 		$vw-context: (1920 * 0.01) * 1px;   
 		@return ($target / $vw-context) * 1vw; 

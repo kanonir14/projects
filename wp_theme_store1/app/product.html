@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta content="initial-scale=1, width=device-width" name="viewport">
 </head>
-<body class="basket-page">
+<body class="single-product">
 
 <header class="header">
 	<div class="container">
@@ -62,102 +62,55 @@
 			<div class="content-header">
 				<div class="bradcrumbs">
 					<span><a href="#">Главная</a></span>
-					<span>Корзина</span>
+					<span><a href="#">Категория</a></span>
+					<span>Samsung Galaxy S10</span>
 				</div>
-				<h1>Корзина товаров</h1>
+				<h1>Samsung Galaxy S10</h1>
+				<div class="content-nav">
+					<div class="content-category">
+						<a href="#">Электроника и гаджеты</a>
+					</div>
+					<div class="rating">
+						<i class="rating-star"></i>
+						<i class="rating-star"></i>
+						<i class="rating-star"></i>
+						<i class="rating-star"></i>
+						<i class="rating-star"></i>
+					</div>
+					<div class="review-count">
+						<a href="#">5 reviews</a>
+					</div>
+				</div>
 			</div>
 			<div class="primary">
-				<form class="woocommerce-cart-form" action="#">
-					<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents">
-						<thead>
-							<tr>
-								<th class="product-thumbnail">&nbsp;</th>
-								<th class="product-name">Название</th>
-								<th class="product-price">Цена</th>
-								<th class="product-subtotal">Подытог</th>
-								<th class="product-remove">&nbsp;</th>
-							</tr>
-						</thead>
-						
-						<tr>
-							<td class="product-thumbnail">
-								<a href="#"><img src="img/card-thumb.png" alt=""></a>
-							</td>
-							<td class="product-name" data-title="Название"><a href="#">Samsung galaxy s8</a></td>
-							<td class="product-price" data-title="Цена">40$</td>
-							<td class="product-subtotal" data-title="Подытог">40$</td>
-							<td class="product-remove"><a href="#"><i class="far fa-trash-alt"></i></a></td>
-						</tr>
-						<tr>
-							<td class="product-thumbnail">
-								<a href="#"><img src="img/card-thumb.png" alt=""></a>
-							</td>
-							<td class="product-name" data-title="Название"><a href="#">Samsung galaxy s8</a></td>
-							<td class="product-price" data-title="Цена">40$</td>
-							<td class="product-subtotal" data-title="Подытог">40$</td>
-							<td class="product-remove"><a href="#"><i class="far fa-trash-alt"></i></a></td>
-						</tr>
-						<tr>
-							<td class="product-thumbnail">
-								<a href="#"><img src="img/card-thumb.png" alt=""></a>
-							</td>
-							<td class="product-name" data-title="Название"><a href="#">Rovus arctic landing</a></td>
-							<td class="product-price" data-title="Цена">40$</td>
-							<td class="product-subtotal" data-title="Подытог">40$</td>
-							<td class="product-remove"><a href="#"><i class="far fa-trash-alt"></i></a></td>
-						</tr>
-						<tr>
-							<td class="actions" colspan="5">
-								<div class="coupon">
-									<input type="text" id="coupon_code" name="coupon_code" placeholder="Скидочный купон">
-									<button type="submit" name="apply_coupon" class="btn btn-card btn-card--xs">Применить</button>
-								</div>
-								<button type="submit" name="update_cart"><i class="fas fa-redo"></i> Обновить корзину</button>
-
-							</td>
-						</tr>
-					</table>
-				</form>
-				<div class="cart-totals">
-					<div class="cart-totals__title">Сумма заказа</div>
-					<div class="cart-subtotal">
-						<div class="price">
-							<div class="old-price">Подытог: 450$</div>
-							<div class="new-price">Итого: 390$</div>
-						</div>
-					</div>
+				<div class="primary-img">
+					<a href="img/products/img-1.png" data-dancybox><img src="img/products/img-1.png" alt=""></a>
 				</div>
 			</div>
 			<!-- product sidebar -->
 			<div class="secondary">
+				<div class="price">
+					<div class="old-price">Цена: 150$</div>
+					<div class="new-price">120$</div>
+				</div>
+				<form action="#" class="single-card--add">
+					<button type="submit" class="btn btn-card btn-card--xl">Добавить в корзину</button>
+				</form>
+				<ul class="attributes">
+					<li>Адаптивность</li>
+					<li>Поддержка IE11</li>
+					<li>Анимация</li>
+					<li>Валидная верстка</li>
+					<li>Масштабируемость ленда</li>
+				</ul>
 				<div class="secondary-info">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur maiores velit, non quasi voluptate voluptatem porro inventore hic! Adipisci!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi mollitia, unde expedita, odit assumenda voluptates. Qui doloribus dolorum amet ratione quidem ducimus porro, nisi voluptatibus, autem ea officia nihil aliquid.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, beatae optio enim! Qui iure, nemo, doloremque dolorem quasi aperiam, est dignissimos rem soluta illum non obcaecati quae. Quis, sit maxime.</p>
 				</div>
-
-				<div class="checkout-form">
-					<form action="#" class="checkout">
-						<div class="form-group">
-							<label for="billing_first_name" class="checkout-label">Имя <span>*</span></label>
-							<input type="text" name="billing_first_name" autocomplete="given-name" placeholder="Ваше имя" required="">
-						</div>
-						<div class="form-group">
-							<label for="billing_email" class="checkout-label">Email <span>*</span></label>
-							<input type="email" name="billing_email" autocomplete="email" placeholder="Ваше имя" required="">
-						</div>
-						<div class="form-group">
-							<textarea name="order_comments" id="order_comments" placeholder="Примечание к заказу (необязательно)" cols="30" rows="5"></textarea>
-						</div>
-						<div class="price">
-							<div class="price-info">Сумма заказа:</div>
-							<div class="new-price">120$</div>
-						</div>
-						<div class="form-group">
-							<button type="submit" id="place_order" name="woocommerce_checkout_place_order" class="btn btn-card btn-card--xl" >Оформить заказ</button>
-						</div>
-					</form>
+				<div class="tags">
+					<h3>Tags</h3>
 				</div>
-				
-				
 			</div>
 		</div>
 	</div>
@@ -282,7 +235,81 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Отзывы -->
+		<section class="reviews">
+			<h2>Отзывы</h2>
+			<div class="container">
+				<div class="comment">
+					<div class="comment-info">
+						<div class="name">Александр</div>
+						<div class="date">13.04.19</div>
+						<div class="rating">
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+						</div>
+					</div>
+					<div class="comment-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sed consequatur odio cupiditate, voluptatem fugiat accusantium vero, itaque voluptatibus qui voluptate quam, temporibus accusamus quisquam excepturi in quis culpa quas aliquam laborum illo velit. Velit sit tenetur quibusdam autem doloribus odio sed distinctio laborum, non, cum laudantium voluptate laboriosam id!
+					</div>
+				</div>
+				<div class="comment">
+					<div class="comment-info">
+						<div class="name">Александр</div>
+						<div class="date">13.04.19</div>
+						<div class="rating">
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+						</div>
+					</div>
+					<div class="comment-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sed consequatur odio cupiditate, voluptatem fugiat accusantium vero, itaque voluptatibus qui voluptate quam, temporibus accusamus quisquam excepturi in quis culpa quas aliquam laborum illo velit. Velit sit tenetur quibusdam autem doloribus odio sed distinctio laborum, non, cum laudantium voluptate laboriosam id!
+					</div>
+				</div>
+				<div class="comment">
+					<div class="comment-info">
+						<div class="name">Александр</div>
+						<div class="date">13.04.19</div>
+						<div class="rating">
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+							<i class="rating-star"></i>
+						</div>
+					</div>
+					<div class="comment-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sed consequatur odio cupiditate, voluptatem fugiat accusantium vero, itaque voluptatibus qui voluptate quam, temporibus accusamus quisquam excepturi in quis culpa quas aliquam laborum illo velit. Velit sit tenetur quibusdam autem doloribus odio sed distinctio laborum, non, cum laudantium voluptate laboriosam id!
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
+
+	<!-- Subscribe banner -->
+	<section class="banner reverse">
+		<div class="container">
+			<div class="banner-inner">
+				<div class="banner-info">
+					<h1>Конверсионные лендинги для паблишеров под любую CPA-сеть</h1>
+					<h3>Мы предлагем качественные лендинги, для работы с любой CPA-сетью</h3>
+					<div class="btn-wrap">
+						<a href="#" class="btn btn-orange">Просмотреть</a>
+					</div>
+				</div>
+				<div class="banner-img">
+					<img src="img/banner-img-2.png" alt="Каталог лендингов под любую CPA-сеть">
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
 
 <footer class="footer">
